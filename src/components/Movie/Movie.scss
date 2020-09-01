@@ -1,0 +1,11 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+.movie {
+    @include remove-list-style;
+
+    &__poster {
+        width: 67.5px;
+        height: 100px;
+    }
+}

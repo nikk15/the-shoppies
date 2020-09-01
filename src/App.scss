@@ -1,0 +1,38 @@
+@import './partials/variables';
+@import './partials/mixins';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    font-size: 16px;
+    font-family: $font-family, $font-family-alt;
+    color: $font-color;
+    margin: 0px;
+    padding: 0 $mobile-padding;
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        padding: 0 $tablet-padding;
+    }
+
+    @include desktop {
+        padding: 0 $desktop-padding;
+        height: 100vw;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 1;
+}

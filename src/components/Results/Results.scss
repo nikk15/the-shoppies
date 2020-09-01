@@ -1,0 +1,21 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+.results {
+    background-color: $white;
+    border-radius: 5px;
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    box-shadow: 5px 5px 5px $black-shadow;
+
+    &__header {
+        margin: 0;
+    }
+
+    &__list {
+        padding: 0;
+    }
+}

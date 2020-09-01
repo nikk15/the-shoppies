@@ -1,0 +1,38 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+
+.search{
+    background-color: $white;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px $black-shadow;
+
+    &__label {
+        margin: 0;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+        height: 3rem;
+        background-image: url('../../assets/Icon-search.svg');
+        background-position-y: center;
+        background-position-x: 0.75rem;
+        background-repeat: no-repeat;
+        margin: 0.5rem 0;
+        background-color: $alabaster;
+        border-radius: 4px;
+        border: solid 1px $mercury;
+        font-family: $font-family, $font-family-alt;
+        font-size: 1rem;;
+    
+        &:focus {
+            outline: none;
+            border: $black solid 2px;
+        }
+    }
+}

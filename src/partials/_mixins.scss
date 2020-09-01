@@ -1,0 +1,36 @@
+@import './variables';
+
+// MEDIA QUERIES
+
+@mixin desktop {
+    @media (min-width: $desktop-break){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet-break){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: $mobile-break){
+        @content;
+    }
+}
+
+// OTHER
+
+@mixin remove-list-style {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+@mixin flex($direction, $align: stretch, $justify: flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
