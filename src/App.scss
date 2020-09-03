@@ -11,6 +11,7 @@ html {
 
 body {
     width: 100vw;
+    height: 100vh;
     font-size: 16px;
     font-family: $font-family, $font-family-alt;
     color: $font-color;
@@ -26,7 +27,7 @@ body {
 
     @include desktop {
         padding: 0 $desktop-padding;
-        height: 100vw;
+        height: 100vh;
     }
 }
 
@@ -35,4 +36,5 @@ body {
     justify-content: space-between;
     width: 100%;
     flex-grow: 1;
+    height: 100%;
 }

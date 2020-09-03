@@ -6,9 +6,20 @@ function Nominations(props){
     return (
         <section className="nominations">
             <h2 className="nominations__header">Your Nominations:</h2>
-            <ul className="nominations__list">
-                <Movie />
-            </ul>
+            {!!props.nominations.length && <ul className="nominations__list">
+                {props.nominations.map(movie=>{
+                    return <Movie 
+                        poster={movie.Poster}
+                        title={movie.Title}
+                        year={movie.Year}
+                        key={movie.imdbID}
+                        movie={movie}
+                        nominationHandler={props.nominationHandler}
+                        class={'remove'}
+                        enabled={true}              
+                    />
+                })}
+            </ul>}
         </section>
     )
 }

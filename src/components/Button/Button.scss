@@ -1,0 +1,32 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+.button {
+    display: block;
+    min-width: 8rem;
+    border: none;
+    border-radius: 5px;
+    color: $black;
+    background-color: $secondary;
+    height: 3rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: 3px 3px 3px $black-shadow;
+    margin-left: 1rem;
+    align-self: center;
+
+    &:disabled {
+        color: $black-disabled;
+        background-color: $secondary-disabled;
+        box-shadow: none;
+        transform: translate(3px, 3px)
+    }
+
+    &:disabled:hover {
+        background-color: $secondary-disabled;
+    }
+
+    &:hover {
+        background-color: $secondary-hover;
+    }
+}

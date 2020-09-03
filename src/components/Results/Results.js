@@ -13,10 +13,12 @@ function Results(props){
                         title={movie.Title}
                         year={movie.Year}
                         key={movie.imdbID}
-                        nominationHandler            
+                        movie={movie}
+                        nominationHandler={props.nominationHandler}
+                        class={'nominate'}
+                        enabled={movie.nominated || props.complete ? false : true}            
                     />
                 })}
-                <Movie />
             </ul>}
         </section>
     )
