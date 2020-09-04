@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/the-shoppies/static/css/main.52b0b750.chunk.css",
+    "main.js": "/the-shoppies/static/js/main.f6748718.chunk.js",
+    "main.js.map": "/the-shoppies/static/js/main.f6748718.chunk.js.map",
+    "runtime-main.js": "/the-shoppies/static/js/runtime-main.7a5fa803.js",
+    "runtime-main.js.map": "/the-shoppies/static/js/runtime-main.7a5fa803.js.map",
+    "static/js/2.d281a46b.chunk.js": "/the-shoppies/static/js/2.d281a46b.chunk.js",
+    "static/js/2.d281a46b.chunk.js.map": "/the-shoppies/static/js/2.d281a46b.chunk.js.map",
+    "index.html": "/the-shoppies/index.html",
+    "precache-manifest.08e3c9c32a434e9f4eee2c5c99d7e62f.js": "/the-shoppies/precache-manifest.08e3c9c32a434e9f4eee2c5c99d7e62f.js",
+    "service-worker.js": "/the-shoppies/service-worker.js",
+    "static/css/main.52b0b750.chunk.css.map": "/the-shoppies/static/css/main.52b0b750.chunk.css.map",
+    "static/js/2.d281a46b.chunk.js.LICENSE.txt": "/the-shoppies/static/js/2.d281a46b.chunk.js.LICENSE.txt",
+    "static/media/Search.scss": "/the-shoppies/static/media/Icon-search.28606900.svg",
+    "static/media/cinema.svg": "/the-shoppies/static/media/cinema.84107fd8.svg",
+    "static/media/goal.svg": "/the-shoppies/static/media/goal.2524395e.svg",
+    "static/media/mail.svg": "/the-shoppies/static/media/mail.a8752ad4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a5fa803.js",
+    "static/js/2.d281a46b.chunk.js",
+    "static/css/main.52b0b750.chunk.css",
+    "static/js/main.f6748718.chunk.js"
+  ]
+}
