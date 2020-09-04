@@ -1,3 +1,5 @@
+Available at: https://nikk15.github.io/the-shoppies/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
