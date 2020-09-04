@@ -4,7 +4,7 @@ import './Button.scss';
 function Button(props){
     return (
         <button 
-            onClick={() => props.nominationHandler(props.movie)}
+            onClick={props.nominationHandler}
             className={"button " + props.class}
             disabled={!props.enabled}
         >

@@ -1,0 +1,63 @@
+@import '../../partials/variables';
+@import '../../partials/mixins';
+
+.loading {
+    @include remove-list-style;
+    display: flex;
+    justify-content: space-between;
+    // margin: 1rem 0;
+    height: 11rem;
+    padding: 0.5rem 1rem;
+
+    &__poster {
+        min-width: 7rem;
+        height: 10rem;
+        // object-fit: cover;
+        // object-position: center;
+        margin-right: 2rem;
+        animation: loading 3s ease 0s infinite;
+    }
+
+    &__details {
+        flex-basis: 1;
+        flex-grow: 1;
+    }
+
+    &__title {
+        height: 1.5rem;
+        width: 10rem;
+        animation: loading 3s ease 0.5s infinite;
+        margin: 1rem 0;
+    }
+
+    &__year {
+        height: 1.5rem;
+        width: 4rem;
+        animation: loading 3s ease 0.5s infinite;
+    }
+
+    &__button {
+        min-width: 8rem;
+        border-radius: 5px;
+        animation: loading 3s ease 1s infinite;
+        height: 3rem;
+        margin-left: 1rem;
+        align-self: center;
+    }
+
+    &:nth-child(odd){
+        background-color: $alabaster;
+    }
+}
+
+@keyframes loading{
+    0% {
+        background-color: $mercury;
+    }
+    50% {
+        background-color: $mercury-tint;
+    }
+    100% {
+        background-color: $mercury;
+    }
+}

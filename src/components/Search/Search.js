@@ -7,9 +7,10 @@ function Search(props){
         <header className="search">
             <img className="search__icon" src={popcorn} alt='popcorn' />
             <div className="search__details">
-                <h2 className="search__label">Find a movie to nominate: </h2>
+                <h1 className="search__header">The Shoppies</h1>
                 <form>
                     <input 
+                        placeholder="Find a movie to nominate..."
                         className="search__input" 
                         name="search" 
                         onChange={(e) => props.searchHandler(e.target.value)}

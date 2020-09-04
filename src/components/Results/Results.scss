@@ -2,9 +2,11 @@
 @import '../../partials/mixins';
 
 .results {
+    display: flex;
+    flex-direction: column;
     background-color: $white;
     border-radius: 5px;
-    height: 100%;
+    height: 75vh;
     width: 50%;
     flex-grow: 1;
     padding-top: 1rem;
@@ -17,5 +19,17 @@
 
     &__list {
         padding: 0;
+        overflow: scroll;
+        flex-grow: 1;
+    }
+
+    &__empty {
+        text-align: center;
+        align-self: center;
+        margin: auto 0;
+        padding-bottom: 6rem;
+        width: 60%;
+        font-size: 1.5rem;
+        color: $grey;
     }
 }

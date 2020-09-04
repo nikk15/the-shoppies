@@ -7,10 +7,12 @@
     align-items: center;
     background-color: $white;
     width: 100%;
-    padding: 1rem;
+    height: 20vh;
+    padding: 1.5rem;
     margin-top: 1rem;
     border-radius: 5px;
     box-shadow: 5px 5px 5px $black-shadow;
+    overflow: hidden;
 
     &__details {
         width: 100%;
@@ -19,5 +21,65 @@
     &__icon {
         width: 6rem;
         margin-right: 2rem;
+        transform: translate(-200px);
+        animation: slide-in-top 0.5s ease-in 0.5s 1 forwards;
+    }
+
+    &__header {
+        transform: translate(-400px);
+        animation: slide-in-left 0.6s ease 0s 1 forwards;
+    }
+
+    &__nominee--0 {
+        opacity: 0%;
+        animation: fade-in 0.5s ease-in 1.3s 1 forwards;
+    }
+
+    &__nominee--1 {
+        opacity: 0%;
+        animation: fade-in 0.5s ease-in 2s 1 forwards;
+    }
+
+    &__nominee--2 {
+        opacity: 0%;
+        animation: fade-in 0.5s ease-in 2.7s 1 forwards;
+    }
+
+    &__nominee--3 {
+        opacity: 0%;
+        animation: fade-in 0.5s ease-in 3.4s 1 forwards;
+    }
+
+    &__nominee--4 {
+        opacity: 0%;
+        animation: fade-in 0.5s ease-in 4.1s 1 forwards;
+    }
+
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translate(-400px)
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-200px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
     }
 }

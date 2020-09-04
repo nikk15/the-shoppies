@@ -7,11 +7,13 @@ function Banner(props){
         <header className="banner">
             <img className='banner__icon' src={envelope} alt='envelope' />
             <div className='banner__details'>
-                <h2>And the nominees are...</h2>
+                <h2 className='banner__header'>And the nominees are...</h2>
                 <p>
-                    {props.nominees.map(nominee => {
-                        return nominee.Title;
-                    }).join(', ')}
+                    {props.nominees.map((nominee, i) => {
+                        return <span className={`banner__nominee--${i}`}>
+                            {i !== 4 ? `${nominee.Title}, `: nominee.Title}
+                        </span>
+                    })}
                 </p>
             </div>
         </header>
