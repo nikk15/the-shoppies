@@ -69,6 +69,7 @@ class App extends React.Component {
             this.setState({results: movies.data.Search, searching: false})
           }
         })
+        .catch(err => console.log(`Unable to fetch movies: ${err}`))
       }
     }
   }
