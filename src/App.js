@@ -51,6 +51,12 @@ class App extends React.Component {
     }, () => localStorage.setItem("nominations", JSON.stringify(this.state.nominations)))
   }
 
+  updateNominatedResults = (movies) => {
+    let nominated = {};
+    this.state.nominations.forEach(nominee => nominated[nominee.imdbID] = true);
+    return movies.map(movie => nominated[movie.imdbID] ? {...movie, nominated: true} : movie)
+  }
+
   componentDidMount(){
     let nominations = localStorage.getItem("nominations");
     if(nominations!==null){
@@ -66,7 +72,7 @@ class App extends React.Component {
         axios.get(`${process.env.REACT_APP_API_URL}?s=${this.state.search}&apikey=${process.env.REACT_APP_API_KEY}`)
         .then(movies => {
           if(movies.data.Search){
-            this.setState({results: movies.data.Search, searching: false})
+            this.setState({results: this.updateNominatedResults(movies.data.Search), searching: false})
           }
         })
         .catch(err => console.log(`Unable to fetch movies: ${err}`))
@@ -94,15 +100,10 @@ class App extends React.Component {
             added={this.state.added}
           />
         </main>
+        <footer>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></footer>
       </div>
     );
   }
 }
 
 export default App;
-
-
-// attribute to add
-// <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-// <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-/* <div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */

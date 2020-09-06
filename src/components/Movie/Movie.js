@@ -21,7 +21,6 @@ function Movie(props){
                 props.nominationHandler(props.movie)
             }, 400)
             refRemove.current = id;
-            console.log(refRemove.current)
             return () => clearTimeout(refRemove.current)
         }
     }, [onRemove])

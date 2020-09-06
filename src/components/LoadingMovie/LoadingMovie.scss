@@ -1,19 +1,17 @@
 @import '../../partials/variables';
 @import '../../partials/mixins';
+@import '../../partials/animations';
 
 .loading {
     @include remove-list-style;
     display: flex;
     justify-content: space-between;
-    // margin: 1rem 0;
     height: 11rem;
     padding: 0.5rem 1rem;
 
     &__poster {
         min-width: 7rem;
         height: 10rem;
-        // object-fit: cover;
-        // object-position: center;
         margin-right: 2rem;
         animation: loading 3s ease 0s infinite;
     }
@@ -47,17 +45,5 @@
 
     &:nth-child(odd){
         background-color: $alabaster;
-    }
-}
-
-@keyframes loading{
-    0% {
-        background-color: $mercury;
-    }
-    50% {
-        background-color: $mercury-tint;
-    }
-    100% {
-        background-color: $mercury;
     }
 }

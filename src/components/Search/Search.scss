@@ -1,6 +1,6 @@
 @import '../../partials/variables';
 @import '../../partials/mixins';
-
+@import '../../partials/animations';
 
 .search{
     display: flex;
@@ -48,5 +48,10 @@
     &__icon {
         width: 7rem;
         margin-right: 1.5rem;
+        animation: shake 1s linear 0s 1;
+
+        &:hover{
+            animation: shake 1s linear 0s infinite;
+        }
     }
 }
