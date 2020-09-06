@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ab1b5ad2d19d6ab71c4764b56de8ca0",
+    "revision": "50d9b83ef1d1f8104ab0d6ba980564a1",
     "url": "/the-shoppies/index.html"
   },
   {
-    "revision": "f72e45f11e1117a0b5b3",
-    "url": "/the-shoppies/static/css/main.52b0b750.chunk.css"
+    "revision": "a11a83e8821758762988",
+    "url": "/the-shoppies/static/css/main.b38a1256.chunk.css"
   },
   {
-    "revision": "d177a28ec95f9905479a",
-    "url": "/the-shoppies/static/js/2.659e3111.chunk.js"
+    "revision": "e139f7664d73caf04e27",
+    "url": "/the-shoppies/static/js/2.61028d96.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/the-shoppies/static/js/2.659e3111.chunk.js.LICENSE.txt"
+    "url": "/the-shoppies/static/js/2.61028d96.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f72e45f11e1117a0b5b3",
-    "url": "/the-shoppies/static/js/main.77b12052.chunk.js"
+    "revision": "a11a83e8821758762988",
+    "url": "/the-shoppies/static/js/main.ceb0e844.chunk.js"
   },
   {
     "revision": "3028237cd38fe8ab6725",
